@@ -1,1 +1,0 @@
-Contribute your designs to AWQUA! Help make water quality monitoring affordable for all citizens of Earth.
