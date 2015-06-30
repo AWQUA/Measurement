@@ -20,30 +20,28 @@ This device does not possess data telemetry capabilities.
 
 ##Use Case  
 _Where can the device be safely used?_  
-
+This device can handle temperatures up to 70C, and is intended for field conditions. It is not water proof or water resistent, however.
 
 ##Power  
 _How is the device powered?_  
-
+This device uses 3.3V DC power, and requires less than 100mA of current. A standard 3.7V lithium ion or polymer battery, or three AA alkaline batteries, would suffice to power it.
 
 _How much power does it use?_  
-
-
-_How long does it need to be recharged before re-use?_  
-
+In semi-automated testing, this device was capable of taking 5000 measurements on one set of three AA batteries.
 
 ##Standard and Testing  
 _How was the device tested?_  
-
+Testing procedures for this device are described in full in [An Affordable Open-Source Turbidimeter](http://www.mdpi.com/1424-8220/14/4/7142).
 
 _How did it perform?_  
-
+Testing results for this device are described in full in [An Affordable Open-Source Turbidimeter](http://www.mdpi.com/1424-8220/14/4/7142). The figure below shows the performance of this model of device, versus a popular commercial turbidimeter.  
+!["Basic Handheld Turbidimeter evaluated against commercial equivalent"](http://www.mdpi.com/sensors/sensors-14-07142/article_deploy/html/images/sensors-14-07142f5.png)
 
 _What performance standards does the device meet?_  
-
+This device was designed and successfully tested to reliably measure turbidity values well below 1.0 NTU, which is the maximum turbidity value recommended by the World Health Organization for drinking water prior to disinfection. Please note however that this device is not certified to meet EPA requirements for the routine turbidity monitoring of treated drinking water in the United States. 
 
 _What monitoring standards can this device be used to meet?_  
-
+This device is one of several proven turbidimeter designs out there that can be used to meet international and World Health Organization guidelines on turbidity monitoring, yet are not able to meet the very exacting (and expensive) American and European turbidity detection standards. There is an urgent global need for simple, affordable turbidity detection, and AWQUA members are working to establish alternative turbidity detection standards to address this need. Please check out our [Standards](https://github.com/AWQUA/Standards) repository for more information.
 
 ##Construction  
 
@@ -75,5 +73,6 @@ _What monitoring standards can this device be used to meet?_
 ####Layout
 ![picture alt](./images/basic-handheld-turbidimeter-20141201.board.jpg "Layout of Basic Handheld Turbidimeter circuit board [2014-12-01]")
 ###Assembly
+For assembly instructions, see the [Supplementary Materials](http://www.mdpi.com/1424-8220/14/4/7142/s1) for An Affordable Open-Source Turbidimeter.  
 ##FAQ and Troubleshooting  
 ###Online Resources
