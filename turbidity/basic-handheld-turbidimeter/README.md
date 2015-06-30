@@ -1,22 +1,50 @@
 #Basic Handheld Turbidimeter
 ##Purpose  
+The Basic Handheld Turbidimeter is designed to measure turbidity on demand, portably, for the lowest possible price.  
+
 ##Function  
-How does the device measure a parameter?  
-How does the device-record data?  
-How does the device display data?  
-What units does the device report in?  
-How does the device communicate data electronically?  
+_How does the device measure a parameter?_  
+This device is a single-beam [nephelometrer](https://en.wikipedia.org/wiki/Nephelometer). Light from an infrared light-emitting diode (IR LED) is scattered by suspended sediment as it passes through a sample of water. This scattered light is detected by an IR-sensitive [photodiode](https://en.wikipedia.org/wiki/Photodiode) mounted at a right angle to the center of the IR LED's light beam. The intensity of light detected by the photodiode is referenced to a calibration curve stored in the device's memory to interpolate the corresponding turbidity value, measured in [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
+
+_How does the device record data?_  
+This device is intended for basic manual operation and does not contain storage for data.   
+
+_How does the device display data?_  
+The microcontroller at the heart of this device reads the frequency of pulses transmitted by the [photodiode unit](http://www.mouser.com/ProductDetail/ams/TSL230BRD-TR/?qs=sGAEpiMZZMu97qiQi8P%252buifvOPr%252b402N67DKHn09PFo%3d), interpolates the turbidity value from stored calibration data, and displays the turbidity value on a [four-digit display panel](http://www.electrodragon.com/product/7-segment-4-digit-display-common-anode/) (much like those used in some alarm clocks).
+
+_What units does the device report in?_  
+Like all AWQUA turbidimeters, this device reports readings in  [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
+
+_How does the device communicate data electronically?_  
+This device does not possess data telemetry capabilities.  
+
 ##Use Case  
-Where can the device be safely used?  
+_Where can the device be safely used?_  
+
+
 ##Power  
-How is the device powered?  
-How much power does it use?  
-How long does it need to be recharged before re-use?  
+_How is the device powered?_  
+
+
+_How much power does it use?_  
+
+
+_How long does it need to be recharged before re-use?_  
+
+
 ##Standard and Testing  
-How was the device tested?  
-How did it perform?  
-What performance standards does the device meet?  
-What monitoring standards can this device be used to meet?  
+_How was the device tested?_  
+
+
+_How did it perform?_  
+
+
+_What performance standards does the device meet?_  
+
+
+_What monitoring standards can this device be used to meet?_  
+
+
 ##Construction  
 
 ###Bill of Materials
@@ -26,6 +54,7 @@ What monitoring standards can this device be used to meet?
 | 1 | 4-digit, 7-segment display  | [$2.10](http://www.electrodragon.com/product/7-segment-4-digit-display-common-anode/)|
 | 1 | 74HC595 shift register  | [$0.62](http://www.mouser.com/ProductDetail/Texas-Instruments/SN74HC595N/?qs=sGAEpiMZZMuyBeSSR239IeaeNSzgQbS%2f1btldJdqa6k%3d) |
 | 1 | LMT86 temperature sensor  | [$1.00](http://www.mouser.com/ProductDetail/Texas-Instruments/LMT86LP/?qs=sGAEpiMZZMvfFCidbTccA1jyVRrxk5nB%252bTEjPRynSGM%3d)|
+| 1 | TSL230BRD  | [$5.03](http://www.mouser.com/ProductDetail/ams/TSL230BRD-TR/?qs=sGAEpiMZZMu97qiQi8P%252buifvOPr%252b402N67DKHn09PFo%3d)|
 | 1 | LF33ABV 3.3V Voltage regulator  | [$1.03](http://www.mouser.com/ProductDetail/STMicroelectronics/LF33ABV/?qs=sGAEpiMZZMsGz1a6aV8DcBQiArhhid1gDswAeAw%2fIB0%3d)|
 | 2 | 10uF aluminum electrolytic capacitors  | [$0.24](http://www.mouser.com/ProductDetail/Nichicon/ULD1J100MDD1TD/?qs=sGAEpiMZZMvwFf0viD3Y3c1N%2fF%2fpDmX12XlNW9X9Y3vZmYyMo5GpOw%3d%3d)|
 | 2 | 22pF ceramic capacitors  | [$0.03](http://www.mouser.com/ProductDetail/Vishay-BC-Components/K220J10C0GF5UH5/?qs=sGAEpiMZZMsh%252b1woXyUXj9nJp%252b8gphztXIKBUu3gv%252bs%3d)|
@@ -45,6 +74,6 @@ What monitoring standards can this device be used to meet?
 ![picture alt](./images/basic-handheld-turbidimeter-20141201.schematic.jpg "Schematic of Basic Handheld Turbidimeter circuit board [2014-12-01]")
 ####Layout
 ![picture alt](./images/basic-handheld-turbidimeter-20141201.board.jpg "Layout of Basic Handheld Turbidimeter circuit board [2014-12-01]")
-
+###Assembly
 ##FAQ and Troubleshooting  
 ###Online Resources
