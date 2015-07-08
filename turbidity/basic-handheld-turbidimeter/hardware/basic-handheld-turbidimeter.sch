@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6513,7 +6513,7 @@ Production Part - 8199
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="2.4V_ZENER" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="PTH"/>
+<part name="2.4V_ZENER" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="PTH" value="DNP"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/12" value="220"/>
 <part name="LIPO" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="EZ" value="100nF"/>
