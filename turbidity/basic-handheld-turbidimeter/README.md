@@ -67,7 +67,7 @@ This device is one of several proven turbidimeter designs out there that can be 
 | 1 | SPST power switch  | [$1.15](http://www.mouser.com/ProductDetail/CHERRY/TRG22F2FBBNN/?qs=sGAEpiMZZMtNT9UGfLL4eOd3cDQgL8vM5i2VNLX9H3E%3d)|
 | 100 | Header pins (0.1" spacing)  | [$.00225](http://www.electrodragon.com/product/break-away-header/)|
 |||
-||Total Cost:|$17.70|
+||**Total Cost:**|**$17.70**|
 ###Circuit Board
 ####Schematic
 ![picture alt](./images/basic-handheld-turbidimeter-20141201.schematic.jpg "Schematic of Basic Handheld Turbidimeter circuit board [2014-12-01]")
