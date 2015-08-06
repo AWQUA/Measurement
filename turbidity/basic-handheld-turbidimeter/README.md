@@ -62,11 +62,12 @@ This device is one of several proven turbidimeter designs out there that can be 
 | 1 | 1K ohm resistors 1% tolerance | [$0.10](http://www.mouser.com/ProductDetail/Vishay-Beyschlag/MBB02070C1001FCT00/?qs=sGAEpiMZZMtlubZbdhIBIAA6NYEPHyksoxlYyK2s%252btM%3d)|
 | 4 | 10K ohm resistors  | [$0.10](http://www.mouser.com/ProductDetail/Vishay-Beyschlag/MBA02040C1002FCT00/?qs=sGAEpiMZZMtlubZbdhIBIP7908E9uONJr6Tgqqo7oLA%3d)|
 | 1 | IR LED  | [$0.47](http://www.mouser.com/ProductDetail/Kingbright/WP7113SF4C/?qs=sGAEpiMZZMvAL21a%2fDhxMro1KOf4QOs%252bCw5JRgjZK8o%3d)|
+| 1 | LED lighting driver | [$0.43](http://www.mouser.com/Search/ProductDetail.aspx?R=AL5809-30S1-7virtualkey62110000virtualkey621-AL5809-30S1-7)|
 | 1 | Momentary contact button  | [$0.91](http://www.mouser.com/ProductDetail/Mountain-Switch/104-0013-EVX/?qs=sGAEpiMZZMvxtGF7dlGNpr35VnaTB25ys95hy84%252ba4o%3d)|
 | 1 | SPST power switch  | [$1.15](http://www.mouser.com/ProductDetail/CHERRY/TRG22F2FBBNN/?qs=sGAEpiMZZMtNT9UGfLL4eOd3cDQgL8vM5i2VNLX9H3E%3d)|
-| 100 | Header pins (0.1" spacing)  | [$0.90](http://www.electrodragon.com/product/break-away-header/)|
+| 100 | Header pins (0.1" spacing)  | [$.00225](http://www.electrodragon.com/product/break-away-header/)|
 |||
-||Total Cost:|$xx.xx|
+||Total Cost:|$17.70|
 ###Circuit Board
 ####Schematic
 ![picture alt](./images/basic-handheld-turbidimeter-20141201.schematic.jpg "Schematic of Basic Handheld Turbidimeter circuit board [2014-12-01]")
