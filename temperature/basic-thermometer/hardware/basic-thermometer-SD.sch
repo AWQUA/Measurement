@@ -3444,6 +3444,8 @@ Standard 8.5x11 US Letter frame</description>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="C3" library="SparkFun" deviceset="CAP" device="0603-CAP" value="100n"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="C4" library="SparkFun" deviceset="CAP" device="0603-CAP" value="100n"/>
+<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3473,6 +3475,8 @@ Standard 8.5x11 US Letter frame</description>
 <instance part="C3" gate="G$1" x="50.8" y="165.1" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
+<instance part="C4" gate="G$1" x="81.28" y="96.52" rot="R90"/>
+<instance part="GND1" gate="1" x="71.12" y="99.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3520,14 +3524,18 @@ Standard 8.5x11 US Letter frame</description>
 <label x="182.88" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="3"/>
-<wire x1="38.1" y1="165.1" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
-<label x="35.56" y="165.1" size="1.778" layer="95"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="167.64" x2="50.8" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="167.64" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="167.64" x2="38.1" y2="165.1" width="0.1524" layer="91"/>
-<junction x="50.8" y="167.64"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="83.82" y="96.52" size="1.778" layer="95"/>
+<wire x1="86.36" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="104.14" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<junction x="86.36" y="96.52"/>
+<label x="86.36" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="AVCC"/>
+<wire x1="60.96" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<label x="60.96" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q2" class="0">
@@ -3634,6 +3642,12 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="58.42" y1="160.02" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="160.02" x2="33.02" y2="160.02" width="0.1524" layer="91"/>
 <junction x="50.8" y="160.02"/>
+<label x="55.88" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -3760,6 +3774,11 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="121.92" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
 <label x="119.38" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
+<label x="182.88" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PD3" class="0">
 <segment>
@@ -3780,6 +3799,17 @@ Standard 8.5x11 US Letter frame</description>
 <pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
 <wire x1="121.92" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
 <label x="119.38" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="3"/>
+<wire x1="38.1" y1="165.1" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
+<label x="35.56" y="165.1" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="167.64" x2="50.8" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="167.64" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="167.64" x2="38.1" y2="165.1" width="0.1524" layer="91"/>
+<junction x="50.8" y="167.64"/>
+<label x="55.88" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD6" class="0">
