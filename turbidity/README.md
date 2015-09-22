@@ -17,4 +17,4 @@ Current models are listed below, with attribute tags next to their links. Here i
 [WR] Water Resistant -- can be splashed without damaging internal electronics, but _not_ waterproof  
 [I] Immersible -- waterproof and can withstand immersion to at least one meter  
 
-* [H][B][`basic-handheld-turbidimeter`](basic-handheld-turbidimeter/) A simple, effective, lowest-cost device for manual turbidity measurments.
+* [H][B][`basic-handheld-turbidimeter`](devices/basic-handheld-turbidimeter/) A simple, effective, lowest-cost device for manual turbidity measurments.
