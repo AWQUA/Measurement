@@ -52,7 +52,7 @@ This device is one of several proven turbidimeter designs out there that can be 
 | 1 | 4-digit, 7-segment display  | [$2.10](http://www.electrodragon.com/product/7-segment-4-digit-display-common-anode/)|
 | 1 | 74HC595 shift register  | [$0.62](http://www.mouser.com/ProductDetail/Texas-Instruments/SN74HC595N/?qs=sGAEpiMZZMuyBeSSR239IeaeNSzgQbS%2f1btldJdqa6k%3d) |
 | 1 | LMT86 temperature sensor  | [$1.00](http://www.mouser.com/ProductDetail/Texas-Instruments/LMT86LP/?qs=sGAEpiMZZMvfFCidbTccA1jyVRrxk5nB%252bTEjPRynSGM%3d)|
-| 1 | TSL230BRD  | [$5.03](http://www.mouser.com/ProductDetail/ams/TSL230BRD-TR/?qs=sGAEpiMZZMu97qiQi8P%252buifvOPr%252b402N67DKHn09PFo%3d)|
+| 1 | TSL230BRD  | [$4.83](http://www.mouser.com/ProductDetail/ams/TSL230BRD-TR/?qs=sGAEpiMZZMu97qiQi8P%252buifvOPr%252b402N67DKHn09PFo%3d)|
 | 1 | LF33ABV 3.3V Voltage regulator  | [$1.03](http://www.mouser.com/ProductDetail/STMicroelectronics/LF33ABV/?qs=sGAEpiMZZMsGz1a6aV8DcBQiArhhid1gDswAeAw%2fIB0%3d)|
 | 2 | 10uF aluminum electrolytic capacitors  | [$0.24](http://www.mouser.com/ProductDetail/Nichicon/ULD1J100MDD1TD/?qs=sGAEpiMZZMvwFf0viD3Y3c1N%2fF%2fpDmX12XlNW9X9Y3vZmYyMo5GpOw%3d%3d)|
 | 2 | 22pF ceramic capacitors  | [$0.03](http://www.mouser.com/ProductDetail/Vishay-BC-Components/K220J10C0GF5UH5/?qs=sGAEpiMZZMsh%252b1woXyUXj9nJp%252b8gphztXIKBUu3gv%252bs%3d)|
@@ -62,12 +62,12 @@ This device is one of several proven turbidimeter designs out there that can be 
 | 1 | 1K ohm resistors 1% tolerance | [$0.10](http://www.mouser.com/ProductDetail/Vishay-Beyschlag/MBB02070C1001FCT00/?qs=sGAEpiMZZMtlubZbdhIBIAA6NYEPHyksoxlYyK2s%252btM%3d)|
 | 4 | 10K ohm resistors  | [$0.10](http://www.mouser.com/ProductDetail/Vishay-Beyschlag/MBA02040C1002FCT00/?qs=sGAEpiMZZMtlubZbdhIBIP7908E9uONJr6Tgqqo7oLA%3d)|
 | 1 | IR LED  | [$0.47](http://www.mouser.com/ProductDetail/Kingbright/WP7113SF4C/?qs=sGAEpiMZZMvAL21a%2fDhxMro1KOf4QOs%252bCw5JRgjZK8o%3d)|
-| 1 | LED lighting driver | [$0.43](http://www.mouser.com/Search/ProductDetail.aspx?R=AL5809-30S1-7virtualkey62110000virtualkey621-AL5809-30S1-7)|
+| 1 | LED lighting driver | [$0.54](http://www.mouser.com/Search/ProductDetail.aspx?R=AL5809-30S1-7virtualkey62110000virtualkey621-AL5809-30S1-7)|
 | 1 | Momentary contact button  | [$0.91](http://www.mouser.com/ProductDetail/Mountain-Switch/104-0013-EVX/?qs=sGAEpiMZZMvxtGF7dlGNpr35VnaTB25ys95hy84%252ba4o%3d)|
 | 1 | SPST power switch  | [$1.15](http://www.mouser.com/ProductDetail/CHERRY/TRG22F2FBBNN/?qs=sGAEpiMZZMtNT9UGfLL4eOd3cDQgL8vM5i2VNLX9H3E%3d)|
 | 100 | Header pins (0.1" spacing)  | [$.00225](http://www.electrodragon.com/product/break-away-header/)|
 |||
-||**Total Cost:**|**$17.70**|
+||**Total Cost:**|**$17.61**|
 ###Circuit Board
 ####Schematic
 ![picture alt](./images/basic-handheld-turbidimeter-20141201.schematic.jpg "Schematic of Basic Handheld Turbidimeter circuit board [2014-12-01]")
