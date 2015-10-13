@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6400,6 +6400,57 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DOCFIELD" prefix="FRAME" uservalue="yes">
+<description>&lt;B&gt;DOCUMENT FIELD&lt;/B&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOCFIELD" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6455,10 +6506,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="LIPO" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="EZ" value="100nF"/>
 <part name="U$6" library="awqua_eagle_library" deviceset="AL5809" device=""/>
+<part name="FRAME1" library="frames" deviceset="DOCFIELD" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="30.48" y="-2.54" size="1.778" layer="94">Released under Creative Commons license BY-SA 4.0
+https://creativecommons.org/licenses/by-sa/4.0</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="25.4" y="43.18"/>
@@ -6481,13 +6535,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R5" gate="G$1" x="71.12" y="60.96" rot="R270"/>
 <instance part="R6" gate="G$1" x="73.66" y="22.86" rot="R270"/>
 <instance part="R7" gate="G$1" x="55.88" y="20.32" rot="R180"/>
-<instance part="R8" gate="G$1" x="43.18" y="-7.62" rot="R270"/>
+<instance part="R8" gate="G$1" x="104.14" y="53.34" rot="R270"/>
 <instance part="C7" gate="G$1" x="-5.08" y="55.88" rot="R270"/>
 <instance part="C8" gate="G$1" x="0" y="60.96"/>
 <instance part="LMT86" gate="G$1" x="-20.32" y="68.58" smashed="yes">
 <attribute name="NAME" x="-27.94" y="72.39" size="1.778" layer="95"/>
 </instance>
-<instance part="BTN" gate="G$1" x="53.34" y="-2.54"/>
+<instance part="BTN" gate="G$1" x="114.3" y="58.42"/>
 <instance part="USB2SERIAL" gate="A" x="-25.4" y="15.24" rot="R180"/>
 <instance part="C9" gate="G$1" x="-12.7" y="20.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="-13.716" y="25.781" size="1.778" layer="95"/>
@@ -6501,7 +6555,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY6" gate="GND" x="-43.18" y="35.56" rot="R270"/>
 <instance part="SUPPLY8" gate="GND" x="5.08" y="17.78"/>
 <instance part="SUPPLY10" gate="GND" x="-5.08" y="-20.32"/>
-<instance part="SUPPLY11" gate="GND" x="43.18" y="-17.78"/>
+<instance part="SUPPLY11" gate="GND" x="104.14" y="43.18"/>
 <instance part="SUPPLY9" gate="GND" x="2.54" y="22.86" rot="R270"/>
 <instance part="SUPPLY13" gate="GND" x="0" y="71.12" rot="R180"/>
 <instance part="SUPPLY14" gate="GND" x="-12.7" y="55.88" rot="R270"/>
@@ -6511,6 +6565,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="LIPO" gate="G$1" x="-53.34" y="81.28" rot="R180"/>
 <instance part="C6" gate="G$1" x="-5.08" y="43.18" rot="R270"/>
 <instance part="U$6" gate="G$1" x="-38.1" y="-17.78"/>
+<instance part="FRAME1" gate="G$1" x="25.4" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -6594,8 +6649,8 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="BTN" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="0" x2="35.56" y2="0" width="0.1524" layer="91"/>
-<label x="35.56" y="0" size="1.778" layer="95"/>
+<wire x1="111.76" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<label x="96.52" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LIPO" gate="G$1" pin="2"/>
@@ -7041,7 +7096,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="43.18" y1="-15.24" x2="43.18" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="45.72" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="GND"/>
@@ -7104,10 +7159,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="BTN" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="-2.54" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-2.54" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="43.18" y="-2.54"/>
-<label x="35.56" y="-2.54" size="1.778" layer="95"/>
+<wire x1="111.76" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
+<junction x="104.14" y="58.42"/>
+<label x="96.52" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="PD2"/>
@@ -7142,4 +7197,10 @@ In this library the device names are the same as the pin names of the symbols, t
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
