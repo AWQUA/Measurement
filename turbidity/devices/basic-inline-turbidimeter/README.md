@@ -4,19 +4,19 @@ The Basic Inline Turbidimeter is designed to measure turbidity in a body of wate
 
 ##Function  
 _How does the device measure a parameter?_  
-This device is a back-scatter [nephelometrer](https://en.wikipedia.org/wiki/Nephelometer). A pair of infrared light-emitting diodes (IR LED) are mount on either side of a light-to-frequency sensor, is scattered by suspended sediment as it passes through a sample of water. Some portion of this light This scattered light is detected by an IR-sensitive [photodiode](https://en.wikipedia.org/wiki/Photodiode) mounted at a right angle to the center of the IR LED's light beam. The intensity of light detected by the photodiode is referenced to a calibration curve stored in the device's memory to interpolate the corresponding turbidity value, measured in [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
+This device is a back-scatter [nephelometrer](https://en.wikipedia.org/wiki/Nephelometer). A pair of infrared light-emitting diodes (IR LED) are mounted on either side of a light-to-frequency sensor. Some portion of this emitted light is scattered by suspended sediment as it passes through a sample of water. This scattered light is detected by an IR-sensitive [photodiode](https://en.wikipedia.org/wiki/Photodiode) mounted at a right angle to the center of the IR LED's light beam. The intensity of light detected by the photodiode is referenced to a calibration curve stored in the device's memory to interpolate the corresponding turbidity value, measured in [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
 
 _How does the device record data?_  
-This device is intended for basic manual operation and does not contain storage for data.   
+This device contains an SD card slot for storing data.   
 
 _How does the device display data?_  
-The microcontroller at the heart of this device reads the frequency of pulses transmitted by the [photodiode unit](http://www.mouser.com/ProductDetail/ams/TSL230BRD-TR/?qs=sGAEpiMZZMu97qiQi8P%252buifvOPr%252b402N67DKHn09PFo%3d), interpolates the turbidity value from stored calibration data, and displays the turbidity value on a [four-digit display panel](http://www.electrodragon.com/product/7-segment-4-digit-display-common-anode/) (much like those used in some alarm clocks).
+This device is intended for standalone data logging and does not include a display.  
 
 _What units does the device report in?_  
 Like all AWQUA turbidimeters, this device reports readings in  [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
 
 _How does the device communicate data electronically?_  
-This device does not possess data telemetry capabilities, however they may be added for additional cost. See the [Communications](https://github.com/AWQUA/Communication) repo for options.
+This device does not possess data telemetry capabilities, however they may be added for additional cost. See the [Communications](https://github.com/AWQUA/Communication) repo for options. 
 
 ##Use Case  
 _Where can the device be safely used?_  
@@ -31,17 +31,17 @@ In automated testing, this device was capable of taking a measurement every 15 m
 
 ##Standard and Testing  
 _How was the device tested?_  
-Testing procedures for this device are described in full in [An Affordable Open-Source Turbidimeter](http://www.mdpi.com/1424-8220/14/4/7142).
+This device has so far only been tested in the Open Source Water lab. The testing consisted of:
+(1) immersing a prototype device in a water bath which contains a spin plate for bath mixing  
+(2) adding small doses of a colloidal suspension to the water bath while relaying readings from the prototype via Bluetooth  every 10 seconds
+(3) on every fourth dose of colloidal suspension, sampling the water bath with a commercial handheld turbidimeter  
+(4) analyzing the fit between the commercial and prototype open-source turbidimeter
 
 _How did it perform?_  
-Testing results for this device are described in full in [An Affordable Open-Source Turbidimeter](http://www.mdpi.com/1424-8220/14/4/7142). The figure below shows the performance of this model of device, versus a popular commercial turbidimeter.  
-!["Basic Handheld Turbidimeter evaluated against commercial equivalent"](http://www.mdpi.com/sensors/sensors-14-07142/article_deploy/html/images/sensors-14-07142f5.png)
+Test results may be found in the `testing` subdirectory in the file `basic-inline-turbidimeter_analysis.20151021.xlsx`. These data will be updated as further testing is conducted.
 
 _What performance standards does the device meet?_  
-This device was designed and successfully tested to reliably measure turbidity values well below 1.0 NTU, which is the maximum turbidity value recommended by the World Health Organization for drinking water prior to disinfection. Please note however that this device is not certified to meet EPA requirements for the routine turbidity monitoring of treated drinking water in the United States. 
-
-_What monitoring standards can this device be used to meet?_  
-This device is one of several proven turbidimeter designs out there that can be used to meet international and World Health Organization guidelines on turbidity monitoring, yet are not able to meet the very exacting (and expensive) American and European turbidity detection standards. There is an urgent global need for simple, affordable turbidity detection, and AWQUA members are working to establish alternative turbidity detection standards to address this need. Please check out our [Standards](https://github.com/AWQUA/Standards) repository for more information.
+We have not evaluated this device against existing standards for backscatter turbidimeters yet, nor have we yet developed a new standard.
 
 ##Construction  
 
@@ -49,11 +49,9 @@ This device is one of several proven turbidimeter designs out there that can be 
 | Quantity  | Part Description | Example Price (each) |
 | :-------------: | ------------- | :-------------: |
 | 1 | ATMega328P-PU microprocessor  | [$2.90](http://www.electrodragon.com/product/atmega328-with-arduino-optiboot-uno/)|
-| 1 | 4-digit, 7-segment display  | [$2.10](http://www.electrodragon.com/product/7-segment-4-digit-display-common-anode/)|
-| 1 | 74HC595 shift register  | [$0.62](http://www.mouser.com/ProductDetail/Texas-Instruments/SN74HC595N/?qs=sGAEpiMZZMuyBeSSR239IeaeNSzgQbS%2f1btldJdqa6k%3d) |
 | 1 | LMT86 temperature sensor  | [$1.00](http://www.mouser.com/ProductDetail/Texas-Instruments/LMT86LP/?qs=sGAEpiMZZMvfFCidbTccA1jyVRrxk5nB%252bTEjPRynSGM%3d)|
 | 1 | TSL230BRD  | [$5.03](http://www.mouser.com/ProductDetail/ams/TSL230BRD-TR/?qs=sGAEpiMZZMu97qiQi8P%252buifvOPr%252b402N67DKHn09PFo%3d)|
-| 1 | LF33ABV 3.3V Voltage regulator  | [$1.03](http://www.mouser.com/ProductDetail/STMicroelectronics/LF33ABV/?qs=sGAEpiMZZMsGz1a6aV8DcBQiArhhid1gDswAeAw%2fIB0%3d)|
+| 1 | LP2985 3.3V Voltage regulator  | [$1.04](http://www.mouser.com/ProductDetail/Texas-Instruments/LP2985-33DBVT/?qs=paYhMW8qfivCywxvLCGbYQ%3D%3D)|
 | 2 | 10uF aluminum electrolytic capacitors  | [$0.24](http://www.mouser.com/ProductDetail/Nichicon/ULD1J100MDD1TD/?qs=sGAEpiMZZMvwFf0viD3Y3c1N%2fF%2fpDmX12XlNW9X9Y3vZmYyMo5GpOw%3d%3d)|
 | 2 | 22pF ceramic capacitors  | [$0.03](http://www.mouser.com/ProductDetail/Vishay-BC-Components/K220J10C0GF5UH5/?qs=sGAEpiMZZMsh%252b1woXyUXj9nJp%252b8gphztXIKBUu3gv%252bs%3d)|
 | 5 | 100nF ceramic capacitors  | [$0.06](http://www.mouser.com/ProductDetail/Vishay-BC-Components/K104Z15Y5VE5TL2/?qs=sGAEpiMZZMsh%252b1woXyUXj5VNmf0jXPWIrWjnp1zAXac%3d)|
@@ -69,10 +67,10 @@ This device is one of several proven turbidimeter designs out there that can be 
 ||Total Cost:|$xx.xx|
 ###Circuit Board
 ####Schematic
-![picture alt](./images/basic-handheld-turbidimeter-20141201.schematic.jpg "Schematic of Basic Handheld Turbidimeter circuit board [2014-12-01]")
+![picture alt](./hardware/basic-inline-turbidimeter.schematic.jpg "Schematic of Basic Handheld Turbidimeter circuit board")
 ####Layout
-![picture alt](./images/basic-handheld-turbidimeter-20141201.board.jpg "Layout of Basic Handheld Turbidimeter circuit board [2014-12-01]")
+![picture alt](./hardware/basic-inline-turbidimeter.board.jpg "Layout of Basic Handheld Turbidimeter circuit board")
 ###Assembly
-For assembly instructions, see the [Supplementary Materials](http://www.mdpi.com/1424-8220/14/4/7142/s1) for An Affordable Open-Source Turbidimeter.  
+[forthcoming]  
 ##FAQ and Troubleshooting  
 ###Online Resources
