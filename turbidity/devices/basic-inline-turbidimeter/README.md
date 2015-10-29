@@ -1,4 +1,4 @@
-#Basic Handheld Turbidimeter
+#Basic Inline Turbidimeter
 ##Purpose  
 The Basic Inline Turbidimeter is designed to measure turbidity in a body of water, automatically, for the lowest possible price.  
 
