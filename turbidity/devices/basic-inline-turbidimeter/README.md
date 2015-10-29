@@ -4,7 +4,7 @@ The Basic Inline Turbidimeter is designed to measure turbidity in a body of wate
 
 ##Function  
 _How does the device measure a parameter?_  
-This device is a back-scatter [nephelometrer](https://en.wikipedia.org/wiki/Nephelometer). A pair of infrared light-emitting diodes (IR LED) are mounted on either side of a light-to-frequency sensor and angled slightly inward. When the LEDs are turned on, Some portion of the light they emit is scattered by suspended sediment as it passes through a sample of water. This scattered light is detected by the light-to-frequency sensor. The intensity of light detected by the photodiode is referenced to a calibration curve stored in the device's memory to interpolate the corresponding turbidity value, measured in [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
+This device is a back-scatter [nephelometrer](https://en.wikipedia.org/wiki/Nephelometer). A pair of infrared light-emitting diodes (IR LED) are mount on either side of a light-to-frequency sensor, is scattered by suspended sediment as it passes through a sample of water. Some portion of this light This scattered light is detected by an IR-sensitive [photodiode](https://en.wikipedia.org/wiki/Photodiode) mounted at a right angle to the center of the IR LED's light beam. The intensity of light detected by the photodiode is referenced to a calibration curve stored in the device's memory to interpolate the corresponding turbidity value, measured in [nephelometric turbidity units (NTU)](http://or.water.usgs.gov/grapher/fnu.html).  
 
 _How does the device record data?_  
 This device is intended for basic manual operation and does not contain storage for data.   
