@@ -18,3 +18,4 @@ Current models are listed below, with attribute tags next to their links. Here i
 [I] Immersible -- waterproof and can withstand immersion to at least one meter  
 
 * [H][B][`basic-handheld-turbidimeter`](devices/basic-handheld-turbidimeter/) A simple, effective, lowest-cost device for manual turbidity measurments.
+* [H][B][`half-pint-turbidimeter`](https://github.com/iamchriskelley/half-pint-turbidimeter/) A small but powerful multi-light/single sensor turbidimeter.
